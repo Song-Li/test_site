@@ -1,4 +1,4 @@
-ip_address = "aws.songli.us"
+ip_address = "aws.songli.us/uniquemachine"
 function send_to_utils(command) {
   res = ""
   $.ajax({
