@@ -200,7 +200,8 @@ function getGPUString() {
   value = trans_data['gpuimgs'].split(',');
   for (hash in value) {
     cur = value[hash].split('_');
-    hashes[cur[0]] = cur[1];
+    // here use the third value which is the hashes
+    hashes[cur[0]] = cur[2];
   }
   trans_data['gpu_hashes'] = hashes;
   value = getGPUTable(hashes);
