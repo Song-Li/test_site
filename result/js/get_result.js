@@ -30,7 +30,7 @@ function get_result() {
   var keys = get_keys();
   console.log(keys);
   for (var idx in keys) {
-    parts = keys[idx].split('_')
+    parts = keys[idx].split('~')
     ip = parts[0];
     time = parts[1];
     browser = parts[2];
