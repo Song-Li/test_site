@@ -96,9 +96,9 @@ function sub_pic_data(pic1_data, pic2_data) {
     // both the two will be considered
     sub_data.data[i] = Math.abs(pic1_data.data[i] - pic2_data.data[i]);
 
-    // here we make the pixels 50 times brighter
+    // here we make the pixels 100 times brighter
     // may overflow, but seems ok
-    sub_data.data[i] *= 50;
+    sub_data.data[i] *= 100;
 
     // force set every alpha value to be 255
     if (i % 4 == 3) {
