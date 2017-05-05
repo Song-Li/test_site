@@ -1,5 +1,5 @@
 //var ip_address = "sec.uniquemachine.org/uniquemachine/";
-var ip_address = "aws.songli.us/uniquemachine/";
+var ip_address = "lab.songli.us/uniquemachine/";
 
 function populateFontList(fontArr) {
   fonts = [];
@@ -178,8 +178,8 @@ var Sender = function() {
       data : {
         imageBase64: dataurl
       },
-      success : function(img_id) {
-        this.toServer(WebGL, ven, ren, md5(dataurl), id, img_id);
+      success : function(id) {
+        this.toServer(WebGL, ven, ren, md5(dataurl), id, id);
         //parent.postMessage(data,"http://uniquemachine.org");
       },
       error: function (xhr, ajaxOptions, thrownError) {
